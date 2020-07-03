@@ -1,12 +1,14 @@
 import mongoose from "mongoose";
 
-const conta = mongoose.Schema({
+//mongoose.set('debug', true);
+
+const contaSchema = mongoose.Schema({
     agencia: {
-        type: String,
+        type: Number,
         required: true,
     },
     conta: {
-        type: String,
+        type: Number,
         required: true,
     },
     name: {
@@ -20,6 +22,6 @@ const conta = mongoose.Schema({
     },
 });
 
-const contasModel = mongoose.model('contas', conta);
+const contasModel = mongoose.model('contas', contaSchema);
 
 export default contasModel;
