@@ -9,5 +9,10 @@ routes.get("/", contasController.index);
 routes.put("/", contasController.updateBalance);
 routes.get("/findAccount", contasController.findAccount);
 routes.delete("/deleteAccount", contasController.deleteAccount);
+routes.put("/transferAccount", contasController.transferAccount);
+routes.get("/mediaBalanceAgency", contasController.mediaBalanceAgency);
+routes.get("/clientsMorePoors", contasController.clientsMorePoors);
+routes.get("/clientsMoreRich", contasController.clientsMoreRich);
+routes.get("/clientsPrime", contasController.clientsPrime);
 
 export default routes;
